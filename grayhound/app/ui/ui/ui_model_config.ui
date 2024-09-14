@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #6D5BBA, stop:1 #8D58BF);
+color: #FFFFFF;
+font-family: Arial, sans-serif;</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>699</width>
+     <height>482</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #8D58BF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    background-color: #8D58BF;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+/* Стили для чекбоксов */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Стили для комбобокса */
+QSpinBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="categoria_A_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Кол-во последних гонок</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="race_amount_spbox">
+         <property name="maximum">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="sec_time_btn">
+         <property name="text">
+          <string>Sectional_time</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="fin_pos_btn">
+         <property name="text">
+          <string>Финишная позиция</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="trap_btn">
+         <property name="text">
+          <string>Trap</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="dist_btn">
+         <property name="text">
+          <string>Дистанция</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="adj_time_btn">
+         <property name="text">
+          <string>Время с корректировкой</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="odds_btn">
+         <property name="text">
+          <string>Коэффициент</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="run_time_btn">
+         <property name="text">
+          <string>Время без корректировки</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="dog_weight_btn">
+         <property name="text">
+          <string>Вес собаки</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="win_time_btn">
+         <property name="text">
+          <string>Выиграшное время</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="select_all_A">
+         <property name="text">
+          <string>Выбрать все</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #8D58BF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    background-color: #8D58BF;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+/* Стили для чекбоксов */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Стили для комбобокса */
+QSpinBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="curr_race_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Текущая гонка</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="curr_trap_btn">
+         <property name="text">
+          <string>Trap</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="curr_dist_btn">
+         <property name="text">
+          <string>Дистанция</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="curr_odds_btn">
+         <property name="text">
+          <string>Коэффициент</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="curr_dog_weight_btn">
+         <property name="text">
+          <string>Вес собаки</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="curr_race_grade_btn">
+         <property name="text">
+          <string>Категория гонки</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="select_all_B">
+         <property name="text">
+          <string>Выбрать все</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="">
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #8D58BF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    background-color: #8D58BF;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+/* Стили для чекбоксов */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Стили для комбобокса */
+QSpinBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="categoria_B_label">
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Категория B</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="fin_pos_hist_btn">
+         <property name="text">
+          <string>Финишная позиция (avg)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="race_all_btn">
+         <property name="text">
+          <string>Общее кол-во гонок</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="dist_by_btn">
+         <property name="text">
+          <string>Отставание от 1-го места</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="race_all_curr_dist_btn">
+         <property name="text">
+          <string>Общее кол-во гонок на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="fst_curr_dist_btn">
+         <property name="text">
+          <string>1-ых мест на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="scd_curr_dist_btn">
+         <property name="text">
+          <string>2-ых мест на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="thrd_curr_dist_btn">
+         <property name="text">
+          <string>3-ых мест на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="frth_curr_dist_btn">
+         <property name="text">
+          <string>4-ых мест на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="ffth_curr_dist_btn">
+         <property name="text">
+          <string>5-ых мест на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="sxth_curr_dist_btn">
+         <property name="text">
+          <string>6-ых мест на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="fin_pos_curr_dist_btn">
+         <property name="text">
+          <string>Финишная позиция на данной дистанции (avg)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="sec_time_curr_dist_btn">
+         <property name="text">
+          <string>Sectional time на данной дистанции (avg)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="dog_grade_curr_dist_btn">
+         <property name="text">
+          <string>Оценка собаки на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="best_run_time_curr_dist_btn">
+         <property name="text">
+          <string>Лучшее время на данной дистанции </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="best_sec_time_curr_dist_btn">
+         <property name="text">
+          <string>Лучшее sectional_time на данной дистанции</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="select_all_C">
+         <property name="text">
+          <string>Выбрать все</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

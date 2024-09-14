@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1294</width>
+    <height>868</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #6D5BBA, stop:1 #8D58BF);
+color: #FFFFFF;
+font-family: Arial, sans-serif;</string>
+  </property>
+  <property name="locale">
+   <locale language="Russian" country="Ukraine"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">font-family: Noto Sans SC;</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>1058</width>
+      <height>564</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QFrame" name="train_frame">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255, 40);
+border-radius: 7px;
+</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLabel" name="train_label">
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Диапозон выборки</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="start_date_train_wgt">
+                <property name="styleSheet">
+                 <string notr="true">QDateEdit {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #CCCCCC;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QDateEdit::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_down.svg);
+    width: 10px;
+    height: 10px;
+}
+
+QCalendarWidget {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+QCalendarWidget QToolButton {
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #8D58BF;
+}
+
+QCalendarWidget QMenu {
+    background-color: #6D5BBA;
+    color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox {
+    background: none;
+    color: #FFFFFF;
+    selection-background-color: #8D58BF;
+    selection-color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox::up-button, QCalendarWidget QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 15px;
+    border: none;
+}
+
+QCalendarWidget QSpinBox::up-arrow, QCalendarWidget QSpinBox::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_up.svg); 
+    width: 10px;
+    height: 10px;
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="end_date_train_wgt">
+                <property name="styleSheet">
+                 <string notr="true">QDateEdit {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #CCCCCC;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QDateEdit::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_down.svg);
+    width: 10px;
+    height: 10px;
+}
+
+QCalendarWidget {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+QCalendarWidget QToolButton {
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #8D58BF;
+}
+
+QCalendarWidget QMenu {
+    background-color: #6D5BBA;
+    color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox {
+    background: none;
+    color: #FFFFFF;
+    selection-background-color: #8D58BF;
+    selection-color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox::up-button, QCalendarWidget QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 15px;
+    border: none;
+}
+
+QCalendarWidget QSpinBox::up-arrow, QCalendarWidget QSpinBox::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_up.svg); 
+    width: 10px;
+    height: 10px;
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QListWidget" name="cities_wgt_1">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit, QComboBox, QListWidget {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}</string>
+                  </property>
+                  <property name="autoScroll">
+                   <bool>true</bool>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Brighton &amp; Hove</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Central Park</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Crayford</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Doncaster</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Harlow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Kinsley</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Monmore Green</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Newcastle</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Nottingham</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Oxford</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Pelaw Grange</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Perry Barr</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Romford</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Sheffield</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Suffolk Downs</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Sunderland</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Swindon</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Towcester</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Valley</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Yarmouth</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QListWidget" name="distances_wgt_1">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit, QComboBox, QListWidget {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}</string>
+                  </property>
+                  <property name="autoScroll">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="select_all_train">
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox {
+    color: #FFFFFF;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>Выбрать все</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QLabel" name="pred_label">
+                <property name="styleSheet">
+                 <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Диапозон предсказаний</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="start_date_pred_wgt">
+                <property name="styleSheet">
+                 <string notr="true">QDateEdit {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #CCCCCC;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QDateEdit::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_down.svg);
+    width: 10px;
+    height: 10px;
+}
+
+QCalendarWidget {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+QCalendarWidget QToolButton {
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #8D58BF;
+}
+
+QCalendarWidget QMenu {
+    background-color: #6D5BBA;
+    color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox {
+    background: none;
+    color: #FFFFFF;
+    selection-background-color: #8D58BF;
+    selection-color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox::up-button, QCalendarWidget QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 15px;
+    border: none;
+}
+
+QCalendarWidget QSpinBox::up-arrow, QCalendarWidget QSpinBox::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_up.svg); 
+    width: 10px;
+    height: 10px;
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDateEdit" name="end_date_pred_wgt">
+                <property name="styleSheet">
+                 <string notr="true">QDateEdit {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #CCCCCC;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QDateEdit::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_down.svg);
+    width: 10px;
+    height: 10px;
+}
+
+QCalendarWidget {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+QCalendarWidget QToolButton {
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #8D58BF;
+}
+
+QCalendarWidget QMenu {
+    background-color: #6D5BBA;
+    color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox {
+    background: none;
+    color: #FFFFFF;
+    selection-background-color: #8D58BF;
+    selection-color: #FFFFFF;
+}
+
+QCalendarWidget QSpinBox::up-button, QCalendarWidget QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 15px;
+    border: none;
+}
+
+QCalendarWidget QSpinBox::up-arrow, QCalendarWidget QSpinBox::down-arrow {
+    image: url(C:\Users\milie\OneDrive\Рабочий стол\icons\arrow_up.svg); 
+    width: 10px;
+    height: 10px;
+}</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QListWidget" name="cities_2">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit, QComboBox, QListWidget {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}</string>
+                  </property>
+                  <property name="autoScroll">
+                   <bool>true</bool>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Brighton &amp; Hove</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Central Park</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Crayford</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Doncaster</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Harlow</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Kinsley</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Monmore Green</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Newcastle</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Nottingham</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Oxford</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Pelaw Grange</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Perry Barr</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Romford</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Sheffield</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Suffolk Downs</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Sunderland</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Swindon</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Towcester</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Valley</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Yarmouth</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QListWidget" name="listWidget_4">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit, QComboBox, QListWidget {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}</string>
+                  </property>
+                  <property name="autoScroll">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="select_all_pred">
+                <property name="styleSheet">
+                 <string notr="true">QCheckBox {
+    color: #FFFFFF;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>Выбрать все</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="train_btn">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #8D58BF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Тренировать</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="predict_btn">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #8D58BF;
+}</string>
+             </property>
+             <property name="text">
+              <string>Предсказать</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="today_predict_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #6D5BBA;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #8D58BF;
+}</string>
+         </property>
+         <property name="text">
+          <string>Предсказать на сегодня</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListWidget" name="info_list_wgt">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit, QComboBox, QListWidget {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+}</string>
+       </property>
+       <property name="spacing">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1234</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Загальні налаштування для всього додатку */
+QWidget {
+    background-color: #7B1FA2;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Стиль для текстових полів */
+QLineEdit {
+    background-color: #9575CD;
+    border: 1px solid #D1C4E9;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Стиль для кнопок */
+QPushButton {
+    background-color: #512DA8;
+    border: 1px solid #9575CD;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #673AB7;
+}
+
+/* Стиль для списків */
+QListView, QTreeView {
+    background-color: #9575CD;
+    border: 1px solid #D1C4E9;
+    border-radius: 4px;
+}
+
+/* Стиль для групових блоків */
+QGroupBox {
+    border: 1px solid #D1C4E9;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    background-color: #7B1FA2;
+}
+
+/* Стиль для полів дати */
+QDateEdit {
+    background-color: #9575CD;
+    border: 1px solid #D1C4E9;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Стиль для прогрес-бару */
+QProgressBar {
+    border: 1px solid #D1C4E9;
+    border-radius: 4px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #512DA8;
+}
+
+/* Специфічні налаштування для окремих елементів */
+#apiKeyInput {
+    background-color: #9575CD;
+    border: 1px solid #D1C4E9;
+    border-radius: 4px;
+    padding: 5px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>551</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_api_key">
+        <property name="text">
+         <string>API KEY</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="line_scraping"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_scraping">
+          <property name="text">
+           <string>Дата скрапинга</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="date_scraping"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="rmv_date_btn">
+            <property name="text">
+             <string>Убрать дату</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="add_date_btn">
+            <property name="text">
+             <string>Добавить дату</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QListWidget" name="date_list"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>510</y>
+     <width>461</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QPushButton" name="scraping_btn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>скрапить!!!</string>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QProgressBar" name="scraping_progress_bar">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
